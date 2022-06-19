@@ -627,7 +627,7 @@ function parseResponse(barcode, json) {
       }
     }
 
-    if (tempLoc != "") {
+    if (tempLoc) {
       status = (status == "PASS" || status == "PULL-LOC") ? "PULL-LOC" : "PULL-MULT";
       status_msg += "Item has a temp location. ";
     }
