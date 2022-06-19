@@ -585,7 +585,7 @@ function parseResponse(barcode, json) {
     var holdingLink = getValue(holdingData, "link");
     var itemData = getArray(json, "item_data");
     var loc = getArrayValue(itemData, "location", "value");
-    var tempLoc = getArrayValue(holdingData, "temp_location", "");
+    var tempLoc = getArrayValue(holdingData, "temp_location", "value");
     //var base = getArrayValue(itemData, "base_status", "value");
     //var requested = getValue(itemData, "requested");
     var process = getArrayValue(itemData, "process_type", "value")
